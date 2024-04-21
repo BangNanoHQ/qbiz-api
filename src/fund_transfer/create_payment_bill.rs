@@ -23,7 +23,6 @@ pub struct PaymentBill {
 
 
 
-// made the fields to to be similar to V2 on prepaid and made it to english
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct PaymentBillReqBody{  
     /// feeDeductType:BALANCE,ORDER
@@ -39,7 +38,6 @@ pub struct PaymentBillReqBody{
 }
 
 
-// post request to get the payment
 pub async fn create_payment_bill(out_payment_bill_num: Uuid, merchant_id: Option<String>) -> Result<PaymentBillResponse, Error> {
     let path: Vec<String> = vec!["payment-bill/create-payment-bill".to_string()];
 
@@ -60,7 +58,6 @@ pub async fn create_payment_bill(out_payment_bill_num: Uuid, merchant_id: Option
 
     let signature = generate_signature(&body);
 
-    // send this with the intent to respond in json
     let res = client
         .post(&url)
         .header("Content-Type", "application/json")
