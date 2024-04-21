@@ -104,6 +104,16 @@ pub enum ResponseCode {
     // Code: PAYMENT_ORDER_EXISTS Message: Ada perintah pembayaran
     #[serde(rename = "PAYMENT_ORDER_EXISTS")]
     PaymentOrderExists,
+    // Code: ERROR_BANK Message: Bank yang salah
+    #[serde(rename = "ERROR_BANK")]
+    ErrorBank,
+    // Code: AMOUNT_ONLY_SUPPORT_WHOLE_NUMBERS Message: Jumlah hanya dapat dibulatkan ke bilangan bulat terdekat
+    #[serde(rename = "AMOUNT_ONLY_SUPPORT_WHOLE_NUMBERS")]
+    AmountOnlySupportWholeNumbers,
+    // Code: PAYMENT_AMOUNT_NOT_IN_RULE Message: Pembayaran tidak sesuai dengan persyaratan
+    #[serde(rename = "PAYMENT_AMOUNT_NOT_IN_RULE")]
+    PaymentAmountNotInRule,
+
 
     #[serde(other)]
     Other(String),

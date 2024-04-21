@@ -62,5 +62,24 @@
       "envFile": "${workspaceFolder}/.env",
       "cwd": "${workspaceFolder}"
     },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug example 'fund_transfer_check_and_save_payment_bill_detail'",
+      "cargo": {
+        "args": [
+          "build",
+          "--example=fund_transfer_check_and_save_payment_bill_detail",
+          "--package=qbiz-api"
+        ],
+        "filter": {
+          "name": "fund_transfer_check_and_save_payment_bill_detail",
+          "kind": "example"
+        }
+      },
+      "args": [],
+      "envFile": "${workspaceFolder}/.env",
+      "cwd": "${workspaceFolder}"
+    },
   ]
 }
