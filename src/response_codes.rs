@@ -113,6 +113,9 @@ pub enum ResponseCode {
     // Code: PAYMENT_AMOUNT_NOT_IN_RULE Message: Pembayaran tidak sesuai dengan persyaratan
     #[serde(rename = "PAYMENT_AMOUNT_NOT_IN_RULE")]
     PaymentAmountNotInRule,
+    // Code: PAYMENT_BILL_STATUS_ERROR_CANT_NOT_OPERATE Message: Status pesanan pembayaran tidak normal, operasi tidak diperbolehkan
+    #[serde(rename = "PAYMENT_BILL_STATUS_ERROR_CANT_NOT_OPERATE")]
+    PaymentBillStatusErrorCantNotOperate,
 
 
     #[serde(other)]

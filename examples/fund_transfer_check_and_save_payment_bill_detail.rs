@@ -5,7 +5,7 @@ use uuid::Uuid;
 
 #[tokio::main]
 async fn main() -> Result<(), Error> {
-  let dev_payment_bill_id = Uuid::from_str("9b15aade-db23-588b-b66c-7a62945956c7").unwrap();
+  let dev_payment_bill_id = Uuid::from_str("69c2e1dc-60b6-54ca-ae81-d98313bb216a").unwrap();
   let dev_bank_account = "5859459100023141".to_string();
   let dev_bank_name = "BANK NEO COMMERCE".to_string();
   let dev_bank_id = "202304281438059424".to_string();

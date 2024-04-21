@@ -6,7 +6,7 @@ use uuid::Uuid;
 #[tokio::main]
 async fn main() -> Result<(), Error> {
   let payment_bill_id = Uuid::from_str("69c2e1dc-60b6-54ca-ae81-d98313bb216a").unwrap();
-  let result = fund_transfer::create_payment_bill(payment_bill_id, None).await.unwrap();
-  println!("create_payment_bill {:?}", result );
+  let result = fund_transfer::confirm_and_transfer(payment_bill_id, None).await.unwrap();
+  println!("confirm_and_transfer {:?}", result );
   Ok(())
 }
