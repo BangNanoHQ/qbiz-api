@@ -21,7 +21,7 @@ pub struct BankInfo {
 
 
 // post request to get the bank_list.
-pub async fn bank_list() -> Result<Vec<BankInfo>, Error> {
+pub async fn bank_list() -> Result<BankListResponse, Error> {
     let path: Vec<String> = vec!["common/bank-list".to_string()];
 
     let url = Path::new(api_url())
@@ -45,17 +45,8 @@ pub async fn bank_list() -> Result<Vec<BankInfo>, Error> {
         .await
         .map_err(|e| Error::ResponseError(e.to_string()))?;
 
-    if res.status() != 200 {
-        return Err(Error::ResponseError(format!(
-            "Response status code: {}",
-            res.status()
-        )));
-    }
     let body = res.text().await.map_err(|e| Error::ResponseError(e.to_string()))?;
     let result: BankListResponse = serde_json::from_str(&body).map_err(|e| Error::DeserializationError(e.to_string()))?;
 
-    let data = result.data.clone().ok_or(Error::ResponseError("No Data".to_string()))?;
-
-
-    Ok(data)
+    Ok(result)
 }
