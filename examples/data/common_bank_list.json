@@ -1,0 +1,370 @@
+{
+  "code": "SUCCESS",
+  "data": [
+      {
+          "bank_name": "PT. BANK NEGARA INDONESIA (PERSERO)",
+          "bank_id": "202212291418186281"
+      },
+      {
+          "bank_name": "PT. BANK CIMB NIAGA TBK",
+          "bank_id": "202212291469418958"
+      },
+      {
+          "bank_name": "PT. BANK PERMATA,TBK",
+          "bank_id": "202212291435033331"
+      },
+      {
+          "bank_name": "PT. BANK CENTRAL ASIA TBK.",
+          "bank_id": "202212291407271615"
+      },
+      {
+          "bank_name": "PT. BANK MANDIRI (PERSERO) TBK",
+          "bank_id": "202212291453958885"
+      },
+      {
+          "bank_name": "PT. BANK RAKYAT INDONESIA (PERSERO)",
+          "bank_id": "202212291495321017"
+      },
+      {
+          "bank_name": "BANK INDEX SELINDO",
+          "bank_id": "202212291465242288"
+      },
+      {
+          "bank_name": "BANK OF CHINA (HONG KONG) LIMITED",
+          "bank_id": "202212291486812030"
+      },
+      {
+          "bank_name": "CITIBANK, NA",
+          "bank_id": "202212291457005652"
+      },
+      {
+          "bank_name": "PT BANK CAPITAL INDONESIA",
+          "bank_id": "202212291407248263"
+      },
+      {
+          "bank_name": "PT. BANK ACEH SYARIAH",
+          "bank_id": "202212291430334078"
+      },
+      {
+          "bank_name": "PT. BANK AMAR INDONESIA",
+          "bank_id": "202212291416110420"
+      },
+      {
+          "bank_name": "PT. BANK ANZ INDONESIA",
+          "bank_id": "202212291426724666"
+      },
+      {
+          "bank_name": "PT. BANK ARTHA GRAHA INTERNASIONAL, TBK",
+          "bank_id": "202212291469992228"
+      },
+      {
+          "bank_name": "PT. BANK ARTOS INDONESIA (JAGO)",
+          "bank_id": "202212291457496353"
+      },
+      {
+          "bank_name": "PT. Bank BTPN, Tbk.",
+          "bank_id": "202212291459094476"
+      },
+      {
+          "bank_name": "PT. BANK BUKOPIN Tbk.",
+          "bank_id": "202212291496796127"
+      },
+      {
+          "bank_name": "PT. BANK BUMI ARTA",
+          "bank_id": "202212291468043846"
+      },
+      {
+          "bank_name": "PT. BANK CHINA CONSTRUCTION BANK INDONESIA, TBK",
+          "bank_id": "202212291491213408"
+      },
+      {
+          "bank_name": "PT. BANK COMMONWEALTH",
+          "bank_id": "202212291480165697"
+      },
+      {
+          "bank_name": "PT. BANK CTBC INDONESIA",
+          "bank_id": "202212291427334731"
+      },
+      {
+          "bank_name": "PT. BANK DANAMON INDONESIA Tbk.",
+          "bank_id": "202212291455440818"
+      },
+      {
+          "bank_name": "PT. BANK DBS INDONESIA",
+          "bank_id": "202212291491038667"
+      },
+      {
+          "bank_name": "PT. BANK DKI",
+          "bank_id": "202212291480620216"
+      },
+      {
+          "bank_name": "PT. BANK GANESHA",
+          "bank_id": "202212291451072922"
+      },
+      {
+          "bank_name": "PT. BANK HARDA INTERNATIONAL",
+          "bank_id": "202212291460513403"
+      },
+      {
+          "bank_name": "PT. BANK HSBC INDONESIA",
+          "bank_id": "202212291420693534"
+      },
+      {
+          "bank_name": "PT. BANK IBK INDONESIA TBK",
+          "bank_id": "202212291480350142"
+      },
+      {
+          "bank_name": "PT. BANK ICBC INDONESIA",
+          "bank_id": "202212291457702395"
+      },
+      {
+          "bank_name": "PT. BANK INA PERDANA, Tbk",
+          "bank_id": "202212291485114610"
+      },
+      {
+          "bank_name": "PT. BANK JASA JAKARTA",
+          "bank_id": "202212291401765392"
+      },
+      {
+          "bank_name": "PT. BANK KEB HANA INDONESIA",
+          "bank_id": "202212291464212426"
+      },
+      {
+          "bank_name": "PT. BANK KESEJAHTERAAN EKONOMI",
+          "bank_id": "202212291458844127"
+      },
+      {
+          "bank_name": "PT. BANK MANDIRI TASPEN",
+          "bank_id": "202212291443875939"
+      },
+      {
+          "bank_name": "PT. BANK MASPION",
+          "bank_id": "202212291442382550"
+      },
+      {
+          "bank_name": "PT. BANK MAYAPADA Tbk.",
+          "bank_id": "202212291406349568"
+      },
+      {
+          "bank_name": "PT. BANK MAYBANK INDONESIA Tbk.",
+          "bank_id": "202212291464464605"
+      },
+      {
+          "bank_name": "PT. BANK MAYORA",
+          "bank_id": "202212291420187332"
+      },
+      {
+          "bank_name": "PT. BANK MEGA SYARIAH",
+          "bank_id": "202212291400737587"
+      },
+      {
+          "bank_name": "PT. BANK MEGA Tbk.",
+          "bank_id": "202212291465124702"
+      },
+      {
+          "bank_name": "PT. BANK MESTIKA DHARMA",
+          "bank_id": "202212291440809894"
+      },
+      {
+          "bank_name": "PT. BANK MNC INTERNASIONAL, TBK",
+          "bank_id": "202212291450654122"
+      },
+      {
+          "bank_name": "PT. BANK MUAMALAT INDONESIA",
+          "bank_id": "202212291485748930"
+      },
+      {
+          "bank_name": "PT. BANK MULTI ARTA SENTOSA",
+          "bank_id": "202212291452343854"
+      },
+      {
+          "bank_name": "PT. BANK NATIONALNOBU",
+          "bank_id": "202212291419453146"
+      },
+      {
+          "bank_name": "PT. BANK OCBC NISP, Tbk.",
+          "bank_id": "202212291472998030"
+      },
+      {
+          "bank_name": "PT. BANK OF INDIA INDONESIA, TBK",
+          "bank_id": "202212291481666442"
+      },
+      {
+          "bank_name": "PT. BANK OKE INDONESIA, TBK",
+          "bank_id": "202212291444172179"
+      },
+      {
+          "bank_name": "PT. BANK PANIN DUBAI SYARIAH",
+          "bank_id": "202212291439844771"
+      },
+      {
+          "bank_name": "PT. BANK PEMBANGUNAN DAERAH  JABAR DAN BANTEN",
+          "bank_id": "202212291438525325"
+      },
+      {
+          "bank_name": "PT. BANK PEMBANGUNAN DAERAH  JATIM",
+          "bank_id": "202212291478878256"
+      },
+      {
+          "bank_name": "PT. BANK PEMBANGUNAN DAERAH  SULUT (SULUTGO)",
+          "bank_id": "202212291406440292"
+      },
+      {
+          "bank_name": "PT. BANK PEMBANGUNAN DAERAH BALI",
+          "bank_id": "202212291483438071"
+      },
+      {
+          "bank_name": "PT. BANK PEMBANGUNAN DAERAH BANTEN",
+          "bank_id": "202212291454494844"
+      },
+      {
+          "bank_name": "PT. BANK PEMBANGUNAN DAERAH KALSEL",
+          "bank_id": "202212291434060082"
+      },
+      {
+          "bank_name": "PT. BANK PEMBANGUNAN DAERAH RIAU KEPRI",
+          "bank_id": "202212291440911929"
+      },
+      {
+          "bank_name": "PT. BANK PEMBANGUNAN DAERAH SUMATERA BARAT",
+          "bank_id": "202212291428667330"
+      },
+      {
+          "bank_name": "PT. BANK PEMBANGUNAN DAERAH SUMUT",
+          "bank_id": "202212291411428598"
+      },
+      {
+          "bank_name": "PT. BANK QNB INDONESIA,TBK",
+          "bank_id": "202212291417506134"
+      },
+      {
+          "bank_name": "PT. BANK RAKYAT INDONESIA AGRONIAGA, TBK",
+          "bank_id": "202212291441016515"
+      },
+      {
+          "bank_name": "PT. BANK SAHABAT SAMPOERNA",
+          "bank_id": "202212291440750670"
+      },
+      {
+          "bank_name": "PT. BANK SBI INDONESIA",
+          "bank_id": "202212291466020352"
+      },
+      {
+          "bank_name": "PT. BANK SHINHAN INDONESIA",
+          "bank_id": "202212291471600175"
+      },
+      {
+          "bank_name": "PT. BANK SINARMAS",
+          "bank_id": "202212291403509552"
+      },
+      {
+          "bank_name": "PT. BANK SULSELBAR",
+          "bank_id": "202212291441462544"
+      },
+      {
+          "bank_name": "PT. BANK SYARIAH BUKOPIN",
+          "bank_id": "202212291412707709"
+      },
+      {
+          "bank_name": "PT. BANK TABUNGAN NEGARA (PERSERO)",
+          "bank_id": "202212291462490504"
+      },
+      {
+          "bank_name": "PT. BANK UOB INDONESIA",
+          "bank_id": "202212291467768125"
+      },
+      {
+          "bank_name": "PT. BANK VICTORIA INTERNATIONAL",
+          "bank_id": "202212291411455193"
+      },
+      {
+          "bank_name": "PT. BANK VICTORIA SYARIAH",
+          "bank_id": "202212291484250385"
+      },
+      {
+          "bank_name": "PT. BANK WOORI SAUDARA INDONESIA 1906,TBK",
+          "bank_id": "202212291440762556"
+      },
+      {
+          "bank_name": "PT. BPD BENGKULU",
+          "bank_id": "202212291414939306"
+      },
+      {
+          "bank_name": "PT. PANIN BANK Tbk.",
+          "bank_id": "202212291479490986"
+      },
+      {
+          "bank_name": "PT. PRIMA MASTER BANK",
+          "bank_id": "202212291426705346"
+      },
+      {
+          "bank_name": "PT.BANK PEMBANGUNAN DAERAH JAMBI",
+          "bank_id": "202212291492506625"
+      },
+      {
+          "bank_name": "PT.BANK PEMBANGUNAN DAERAH KALBAR",
+          "bank_id": "202212291486507329"
+      },
+      {
+          "bank_name": "PT.BANK PEMBANGUNAN DAERAH LAMPUNG",
+          "bank_id": "202212291464623673"
+      },
+      {
+          "bank_name": "PT.BANK PEMBANGUNAN DAERAH NTT",
+          "bank_id": "202212291492095201"
+      },
+      {
+          "bank_name": "PT.BANK PEMBANGUNAN DAERAH PAPUA",
+          "bank_id": "202212291417143335"
+      },
+      {
+          "bank_name": "STANDARD CHARTERED BANK",
+          "bank_id": "202212291493053873"
+      },
+      {
+          "bank_name": "BANK SYARIAH INDONESIA",
+          "bank_id": "202212291470270319"
+      },
+      {
+          "bank_name": "Bank Pembangunan Daerah (BPD DIY)",
+          "bank_id": "202212291484801640"
+      },
+      {
+          "bank_name": "BANK ALADIN SYARIAH",
+          "bank_id": "202304261355003569"
+      },
+      {
+          "bank_name": "BANK SEABANK INDONESIA",
+          "bank_id": "202304261336445108"
+      },
+      {
+          "bank_name": "BANK NEO COMMERCE",
+          "bank_id": "202304281438059424"
+      },
+      {
+          "bank_name": "dana",
+          "bank_id": "202402041535441420"
+      },
+      {
+          "bank_name": "gopay",
+          "bank_id": "202402041568690194"
+      },
+      {
+          "bank_name": "linkaja",
+          "bank_id": "202402041599706230"
+      },
+      {
+          "bank_name": "ovo",
+          "bank_id": "202402041556352631"
+      },
+      {
+          "bank_name": "shopeepay",
+          "bank_id": "202402041571301865"
+      },
+      {
+          "bank_name": "BANK API CHANNEL",
+          "bank_id": "202403051466506788"
+      }
+  ],
+  "message": "SUCCESS"
+}
