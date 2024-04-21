@@ -25,9 +25,18 @@ pub enum Error {
     Unknown,
 }
 
+impl From<serde_json::Error> for Error {
+    fn from(err: serde_json::Error) -> Self {
+        // Convert the `serde_json::Error` to `Error` here.
+        // This is just an example. You need to replace it with your actual conversion code.
+        Error::DeserializationError(err.to_string())
+    }
+}
+
 // generate signature data username + api_key + any text
-pub fn generate_signature(body: String) -> String {
-    sign_hash(&format!("{}{}", body, api_secret()))
+pub fn generate_signature(body: &String) -> String {
+    let body_appended = &format!("{}{}", body, api_secret());
+    sign_hash(&body_appended)
 }
   
 
@@ -44,6 +53,13 @@ pub fn platform_user_id() -> String {
     match std::env::var("QBIZ_PLATFORM_USER_ID") {
         Ok(val) => val,
         Err(_e) => panic!("QBIZ_PLATFORM_USER_ID is not set"),
+    }
+}
+
+pub fn default_merchant_id() -> String {
+    match std::env::var("QBIZ_DEFAULT_MERCHANT_ID") {
+        Ok(val) => val,
+        Err(_e) => panic!("QBIZ_DEFAULT_MERCHANT_ID is not set"),
     }
 }
 

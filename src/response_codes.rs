@@ -101,6 +101,9 @@ pub enum ResponseCode {
     // Code: DEVICE_NAME_EXIST Message: Nama sudah ada
     #[serde(rename = "DEVICE_NAME_EXIST")]
     DeviceNameExist,
+    // Code: PAYMENT_ORDER_EXISTS Message: Ada perintah pembayaran
+    #[serde(rename = "PAYMENT_ORDER_EXISTS")]
+    PaymentOrderExists,
 
     #[serde(other)]
     Other(String),

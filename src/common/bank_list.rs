@@ -1,6 +1,6 @@
 use std::path::Path;
 use serde::{Deserialize, Serialize};
-use crate::{api_url, platform_user_id, sign_hash, Error, ResponseCode};
+use crate::{api_url, generate_signature, platform_user_id, sign_hash, Error, ResponseCode};
 
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -33,7 +33,7 @@ pub async fn bank_list() -> Result<Vec<BankInfo>, Error> {
 
     let body = "".to_string();
 
-    let signature = sign_hash(&body);
+    let signature = generate_signature(&body);
     // send this with the intent to respond in json
     let res = client
         .post(&url)
