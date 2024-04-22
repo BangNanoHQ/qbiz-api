@@ -1,0 +1,29 @@
+{
+  "merchant_id": "202403131425516157",
+  "payment_bill_num": "F202404220600042989",
+  "out_payment_bill_num": "69c2e1dc60b654caae81d98313bb216a",
+  "payment_status": "SUCCESS",
+  "payment_amount": 10000,
+  "payment_fee": 4500,
+  "balance_amount": 14500,
+  "payment_config_fee": 4500,
+  "fee_deduct_type": "BALANCE",
+  "finish_time": "2024-04-22 06:13:51",
+  "list": [
+    {
+      "payment_bill_num": "F202404220600042989",
+      "payment_sub_num": "FS202404220654489468",
+      "out_payment_sub_num": "69c2e1dc60b654caae81d98313bb216a",
+      "receiving_name": "SATUNOL",
+      "receiving_bank_id": "202304281438059424",
+      "receiving_bank_name": "BNC",
+      "receiving_account": "5859459100023141",
+      "credited_amount": 10000,
+      "balance_amount": 14500,
+      "payment_fee": 4500,
+      "payment_status": "SUCCESS",
+      "error_msg": "",
+      "receipt": ""
+    }
+  ]
+}

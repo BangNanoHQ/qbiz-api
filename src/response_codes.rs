@@ -116,6 +116,10 @@ pub enum ResponseCode {
     // Code: PAYMENT_BILL_STATUS_ERROR_CANT_NOT_OPERATE Message: Status pesanan pembayaran tidak normal, operasi tidak diperbolehkan
     #[serde(rename = "PAYMENT_BILL_STATUS_ERROR_CANT_NOT_OPERATE")]
     PaymentBillStatusErrorCantNotOperate,
+    // Code: BANK_INFO_CAN_NOT_FIND Message: Tidak ada kecocokan dengan informasi bank
+    #[serde(rename = "BANK_INFO_CAN_NOT_FIND")]
+    BankInfoCanNotFind,
+
 
 
     #[serde(other)]

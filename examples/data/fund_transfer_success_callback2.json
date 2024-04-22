@@ -1,0 +1,29 @@
+{
+  "merchant_id": "202403201019523198",
+  "payment_bill_num": "F202404220944017934",
+  "out_payment_bill_num": "2f5751283d525d1bbc7e96b249b80b47",
+  "payment_status": "SUCCESS",
+  "payment_amount": 14600,
+  "payment_fee": 4500,
+  "balance_amount": 14600,
+  "payment_config_fee": 4500,
+  "fee_deduct_type": "BALANCE",
+  "finish_time": "2024-04-22 09:09:54",
+  "list": [
+    {
+      "payment_bill_num": "F202404220944017934",
+      "payment_sub_num": "FS202404220942342776",
+      "out_payment_sub_num": "2f5751283d525d1bbc7e96b249b80b47",
+      "receiving_name": "john doe",
+      "receiving_bank_id": "202212291418186281",
+      "receiving_bank_name": "BNI",
+      "receiving_account": "1112223333",
+      "credited_amount": 10100,
+      "balance_amount": 14600,
+      "payment_fee": 4500,
+      "payment_status": "SUCCESS",
+      "error_msg": "",
+      "receipt": ""
+    }
+  ]
+}

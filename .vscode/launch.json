@@ -81,5 +81,24 @@
       "envFile": "${workspaceFolder}/.env",
       "cwd": "${workspaceFolder}"
     },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug example 'fund_transfer_confirm_and_transfer'",
+      "cargo": {
+        "args": [
+          "build",
+          "--example=fund_transfer_confirm_and_transfer",
+          "--package=qbiz-api"
+        ],
+        "filter": {
+          "name": "fund_transfer_confirm_and_transfer",
+          "kind": "example"
+        }
+      },
+      "args": [],
+      "envFile": "${workspaceFolder}/.env",
+      "cwd": "${workspaceFolder}"
+    },
   ]
 }

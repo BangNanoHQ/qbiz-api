@@ -1,8 +1,17 @@
 // use super::{ ResponseCode, ProductType, ProductStatus};
 use crate::{api_url, default_merchant_id, generate_signature, platform_user_id, sign_hash, Error, ResponseCode};
 use serde::{Deserialize, Serialize};
+use serde_enum_str::{Deserialize_enum_str, Serialize_enum_str};
 use uuid::Uuid;
 use std::path::Path;
+
+#[derive(Serialize_enum_str, Deserialize_enum_str, PartialEq, Debug, Clone)]
+pub enum FeeDeductType {
+    #[serde(rename = "BALANCE")]
+    Balance,
+    #[serde(rename = "ORDER")]
+    Order,
+}
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct PaymentBillResponse {
@@ -29,7 +38,7 @@ pub struct PaymentBillReqBody{
     /// BALANCE:Deduction of handling fee from total balance
     /// ORDER:Deduction of handling fee from payment bill detail(Deducted from the payment amount)
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub fee_deduct_type: Option<String>,
+    pub fee_deduct_type: Option<FeeDeductType>,
     /// merchantId
     pub merchant_id: String,
     /// outPaymentBillNum: your payment bill number
@@ -42,7 +51,6 @@ pub async fn create_payment_bill(out_payment_bill_num: Uuid, merchant_id: Option
     let path: Vec<String> = vec!["payment-bill/create-payment-bill".to_string()];
 
     let merchant_id = merchant_id.unwrap_or(default_merchant_id());
-    let fee_deduct_type = Some("BALANCE".to_string());
 
     let url = Path::new(api_url())
         .join(path.join("/"))
@@ -52,7 +60,7 @@ pub async fn create_payment_bill(out_payment_bill_num: Uuid, merchant_id: Option
     let client = reqwest::Client::new();
 
     let body = serde_json::to_string(&PaymentBillReqBody{
-        fee_deduct_type: fee_deduct_type,
+        fee_deduct_type: Some(FeeDeductType::Balance),
         merchant_id: merchant_id,
         out_payment_bill_num: out_payment_bill_num,
     })?;
