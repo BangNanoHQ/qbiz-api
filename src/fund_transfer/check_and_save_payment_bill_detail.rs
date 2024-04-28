@@ -1,5 +1,5 @@
 // use super::{ ResponseCode, ProductType, ProductStatus};
-use crate::{api_url, default_merchant_id, generate_signature, platform_user_id, sign_hash, Error, ResponseCode};
+use crate::{api_url, custom_serde::serialize_simple_uuid, default_merchant_id, generate_signature, platform_user_id, sign_hash, Error, ResponseCode};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 use std::path::Path;
@@ -14,10 +14,10 @@ pub struct CheckAndSavePaymentBillDetailResponse {
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct CheckAndSavePaymentBillDetail {
     /// outPaymentBillNum:your payment bill number
-    #[serde(with = "uuid::serde::simple")]
+    #[serde(serialize_with = "serialize_simple_uuid")]
     pub out_payment_bill_num: Uuid,
-    /// outPaymentSubNum:your payment bill number detail
-    #[serde(with = "uuid::serde::simple")]
+    /// outPaymentSubNum:your payment bill number detail]
+    #[serde(serialize_with = "serialize_simple_uuid")]
     pub out_payment_sub_num: Uuid,
     /// paymentBillNum:system payment bill number
     pub payment_bill_num: Option<String>,
@@ -40,10 +40,10 @@ pub struct CheckAndSavePaymentBillDetailReqBody{
     /// merchantId
     pub merchant_id: String,
     /// outPaymentBillNum:your payment bill number
-    #[serde(with = "uuid::serde::simple")]
+    #[serde(serialize_with = "serialize_simple_uuid")]
     pub out_payment_bill_num: Uuid,
     /// outPaymentSubNum:your payment bill number detail
-    #[serde(with = "uuid::serde::simple")]
+    #[serde(serialize_with = "serialize_simple_uuid")]
     pub out_payment_sub_num: Uuid,
     /// paymentAmount
     pub payment_amount: Option<u64>,

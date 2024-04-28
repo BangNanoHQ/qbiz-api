@@ -1,5 +1,5 @@
 // use super::{ ResponseCode, ProductType, ProductStatus};
-use crate::{api_url, default_merchant_id, generate_signature, platform_user_id, sign_hash, Error, ResponseCode};
+use crate::{api_url, custom_serde::serialize_simple_uuid, default_merchant_id, generate_signature, platform_user_id, sign_hash, Error, ResponseCode};
 use serde::{Deserialize, Serialize};
 use serde_enum_str::{Deserialize_enum_str, Serialize_enum_str};
 use uuid::Uuid;
@@ -24,7 +24,7 @@ pub struct PaymentBillResponse {
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct PaymentBill {
     /// outPaymentBillNum : your payment bill number
-    #[serde(with = "uuid::serde::simple")]
+    #[serde(serialize_with = "serialize_simple_uuid")]
     pub out_payment_bill_num: Uuid,
     /// paymentBillNum: system paymentBillNum
     pub payment_bill_num: String,
@@ -42,7 +42,7 @@ pub struct PaymentBillReqBody{
     /// merchantId
     pub merchant_id: String,
     /// outPaymentBillNum: your payment bill number
-    #[serde(with = "uuid::serde::simple")]
+    #[serde(serialize_with = "serialize_simple_uuid")]
     pub out_payment_bill_num: Uuid,
 }
 

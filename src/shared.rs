@@ -68,6 +68,7 @@ pub fn sign_hash(body: &str) -> String {
 }
 
 
+
 // function to get the endpoint based on env DEV or PROD
 pub fn api_url() -> &'static str {
   match std::env::var("QBIZ_API_ENV") {

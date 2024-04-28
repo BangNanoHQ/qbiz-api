@@ -1,5 +1,5 @@
 // use super::{ ResponseCode, ProductType, ProductStatus};
-use crate::{api_url, default_merchant_id, generate_signature, platform_user_id, sign_hash, Error, ResponseCode};
+use crate::{api_url, custom_serde::serialize_simple_uuid, default_merchant_id, generate_signature, platform_user_id, sign_hash, Error, ResponseCode};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 use std::path::Path;
@@ -25,7 +25,7 @@ pub struct ConfirmAndTransferReqBody{
     /// merchantId
     pub merchant_id: String,
     /// outPaymentBillNum : your payment bill number
-    #[serde(with = "uuid::serde::simple")]
+    #[serde(serialize_with = "serialize_simple_uuid")]
     pub out_payment_bill_num: Uuid,
     /// verifyCode
     #[serde(skip_serializing_if = "Option::is_none")]
