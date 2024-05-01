@@ -5,7 +5,7 @@ use std::vec::Vec;
 use super::FeeDeductType;
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct PaymentBill {
+pub struct PaymentBillCallback {
     pub merchant_id: Option<String>,
     pub payment_bill_num: Option<String>,
     pub out_payment_bill_num: Option<String>,
@@ -16,11 +16,11 @@ pub struct PaymentBill {
     pub payment_config_fee: Option<i64>,
     pub fee_deduct_type: Option<FeeDeductType>,
     pub finish_time: Option<NaiveDateTime>,
-    pub list: Option<Vec<PaymentBillSub>>,
+    pub list: Option<Vec<PaymentBillSubCallback>>,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct PaymentBillSub {
+pub struct PaymentBillSubCallback {
     pub payment_bill_num: Option<String>,
     pub payment_sub_num: Option<String>,
     pub out_payment_sub_num: Option<String>,
