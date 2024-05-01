@@ -33,7 +33,7 @@ impl From<serde_json::Error> for Error {
     }
 }
 
-// generate signature data username + api_key + any text
+// generate signature data body + api_secret
 pub fn generate_signature(body: &String) -> String {
     let body_appended = &format!("{}{}", body, api_secret());
     sign_hash(&body_appended)
