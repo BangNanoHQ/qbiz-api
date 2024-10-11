@@ -4,7 +4,7 @@ use thiserror::Error;
 // DEV API URL
 pub const DEV_API_URL: &str = "http://api-test.51qbiz.id/openapi";
 // PROD API URL
-pub const PROD_API_URL: &str = "https://open.51qbiz.id";
+pub const PROD_API_URL: &str = "https://open.51qbiz.id/openapi";
 
 
 #[derive(Serialize, Deserialize, Error, Debug)]
